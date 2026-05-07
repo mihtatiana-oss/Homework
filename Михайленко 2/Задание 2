@@ -1,0 +1,10 @@
+petya = float(input())
+vasya = float(input())
+tolya = float(input())
+
+if petya > vasya and petya > tolya:
+    print("Петя")
+elif vasya > petya and vasya > tolya:
+    print("Вася")
+else:
+    print("Толя")
