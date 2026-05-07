@@ -1,0 +1,16 @@
+a, b, c = float(input()), float(input()), float(input())
+
+if a == 0:
+    if b == 0:
+        print("Infinite solutions" if c == 0 else "No solution")
+    else:
+        print(f"{-c / b:.2f}")
+else:
+    d = b**2 - 4 * a * c
+    if d < 0:
+        print("No solution")
+    elif d == 0:
+        print(f"{-b / (2 * a):.2f}")
+    else:
+        roots = sorted([(-b - d**0.5) / (2 * a), (-b + d**0.5) / (2 * a)])
+        print(f"{roots[0]:.2f} {roots[1]:.2f}")
