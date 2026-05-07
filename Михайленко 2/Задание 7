@@ -1,0 +1,17 @@
+x = float(input())
+y = float(input())
+
+if x**2 + y**2 > 100:
+    print("Вы вышли в море и рискуете быть съеденным акулой!")
+else:
+    is_danger = False
+    if y <= 5 and y >= 0.25 * x ** 2 - 9:
+        if x < 0 and y <= (5 / 3) * x + 35 / 3:
+            is_danger = True
+        elif x >= 0 and x**2 + y**2 <= 100:
+            is_danger = True
+
+    if is_danger:
+        print("Опасность! Покиньте зону как можно скорее!")
+    else:
+        print("Зона безопасна. Продолжайте работу.")
