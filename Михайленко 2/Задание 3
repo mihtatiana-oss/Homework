@@ -1,0 +1,10 @@
+n = int(input())
+m = int(input())
+
+petya = 6 + n
+vasya = 9 + m
+
+if petya > vasya:
+    print("Петя")
+else:
+    print("Вася")
